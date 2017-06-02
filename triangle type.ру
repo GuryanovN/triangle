@@ -1,0 +1,19 @@
+a = int(input("a:"))
+b = int(input("b:"))
+c = int(input("c:"))
+if (b+c) <= a:
+    print("не является треугольником")
+elif (b+a) <= c:
+    print("не является треугольником")
+elif (a+c) <= b:
+    print("не является треугольником")
+elif b != a != c:
+    print("разносторонний")
+elif b == a != c:
+    print("равнобедренный")
+elif c == a != b:
+    print("равнобедренный")
+elif c == b != a:
+    print("равнобедренный")
+elif a == b == c:
+    print("равносторонний")
